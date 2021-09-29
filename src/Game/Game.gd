@@ -23,5 +23,5 @@ func _physics_process(delta):
 
 func _on_FPSTimer_timeout():
 	var fps = Engine.get_frames_per_second()
-	var title = "FPS: %s | Count: %s" % [fps, _ball_count]
+	var title = "FPS: %s | Ball Multiplier: %s | Ball Count: %s" % [fps, ball_multiplier, _ball_count]
 	$FPS.text = title

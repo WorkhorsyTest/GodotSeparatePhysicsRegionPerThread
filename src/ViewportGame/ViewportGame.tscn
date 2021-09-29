@@ -23,14 +23,19 @@ handle_input_locally = false
 render_target_update_mode = 3
 
 [node name="Game" parent="ViewportContainer/Viewport" instance=ExtResource( 1 )]
+ball_multiplier = 10.0
 
 [node name="ViewportContainer2" type="ViewportContainer" parent="."]
 margin_left = 641.0
 margin_right = 1281.0
 margin_bottom = 800.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Viewport2" type="Viewport" parent="ViewportContainer2"]
 size = Vector2( 640, 800 )
+own_world = true
 handle_input_locally = false
 render_target_update_mode = 3
 

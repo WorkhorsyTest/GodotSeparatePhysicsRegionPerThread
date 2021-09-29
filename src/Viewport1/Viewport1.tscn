@@ -1,4 +1,0 @@
-[gd_scene format=2]
-
-[node name="Viewport1" type="Viewport"]
-size = Vector2( 200, 200 )

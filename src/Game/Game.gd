@@ -11,12 +11,13 @@ func _ready() -> void:
 
 func _physics_process(delta):
 	if Input.is_action_pressed("Jump"):
-		var ball = _ball_instancer.instance()
-		self.add_child(ball)
-		ball.transform.origin.y = _rng.randf_range(5.0, 15.0)
-		ball.transform.origin.x = _rng.randf_range(-100.0, 100.0)
-		ball.transform.origin.z = _rng.randf_range(-100, 100.0)
-		_ball_count += 1
+		for n in 5:
+			var ball = _ball_instancer.instance()
+			self.add_child(ball)
+			ball.transform.origin.y = _rng.randf_range(5.0, 15.0)
+			ball.transform.origin.x = _rng.randf_range(-100.0, 100.0)
+			ball.transform.origin.z = _rng.randf_range(-100, 100.0)
+			_ball_count += 1
 
 
 func _on_FPSTimer_timeout():
